@@ -122,8 +122,8 @@
               ]
             }
           ]
-        },
-        {
+        }, 
+         {
           "id": "insurance",
           "label": "Insurance",
           "questions": [
