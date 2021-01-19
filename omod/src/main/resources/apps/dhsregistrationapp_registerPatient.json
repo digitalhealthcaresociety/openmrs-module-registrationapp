@@ -77,10 +77,7 @@
                                     "uuid" : "7d35a2d4-26a8-4917-86dc-5ac7b81ac541",
                                     "widget" : {
                                         "providerName" : "uicommons",
-                                        "fragmentId" : "field/text",
-                                           "config": {
-                                           "regex": "^[0-9]{10}$|^$"
-                                        }
+                                        "fragmentId" : "field/text"             
                                     }
                                 }
                             ]
