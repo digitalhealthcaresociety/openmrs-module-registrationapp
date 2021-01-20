@@ -93,7 +93,7 @@
                                     "formFieldName" : "ID Number",
                                     "uuid" : "7d35a2d4-26a8-4917-86dc-5ac7b81ac541",
                                     "widget" : {
-                                        "providerName" : "uicommons",
+                                        "providerName" : "registrationapp",
                                         "fragmentId" : "field/text"
                                     },
                                   "cssClasses": ["number"]
