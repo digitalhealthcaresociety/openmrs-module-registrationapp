@@ -91,10 +91,10 @@
                                     "type" : "personAttribute",
                                     "label" : "Identifier",
                                     "formFieldName" : "ID Number",
-                                    "uuid" : "7d35a2d4-26a8-4917-86dc-5ac7b81ac541",
+                                    "uuid" : "b8bed786-3d4f-4aef-945d-5db3d9e5c44f",
                                     "widget" : {
                                         "providerName" : "registrationapp",
-                                        "fragmentId" : "field/text"
+                                        "fragmentId" : "field/IdCard"
                                     },
                                   "cssClasses": ["number"]
                                 }
