@@ -1,0 +1,121 @@
+{
+    "id": "dhs.registrationapp.registerPatient",
+    "instanceOf": "registrationapp.registerPatient",
+    "label": "Create a new patient",
+    "description": "Create a new Patient Record",
+    "extensions": [           
+        {
+            "id": "dhs.registrationapp.registerPatient.homepageLink",
+            "extensionPointId": "org.openmrs.referenceapplication.homepageLink",
+            "type": "link",
+            "label": "referenceapplication.app.registerPatient.label",
+            "url": "registrationapp/registerPatient.page?appId=dhs.registrationapp.registerPatient",
+            "icon": "icon-user",
+            "order": 1,
+            "requiredPrivilege": "App: registrationapp.registerPatient"
+        },
+        {
+            "id": "application.registrationapp.summary.editPatientLink",
+            "extensionPointId": "patientDashboard.overallActions",
+            "type": "link",
+            "label": "referenceapplication.app.editRegistrationInfo.label",
+            "url": "registrationapp/registrationSummary.page?patientId={{patient.uuid}}&appId=dhs.registrationapp.registerPatient",
+            "icon": "icon-pencil",
+            "order": 25,
+            "requiredPrivilege": "App: registrationapp.registerPatient"
+        }
+    ],
+    "config": {
+        "afterCreatedUrl": "/coreapps/clinicianfacing/patient.page?patientId={{patientId}}",
+        "sections": [
+            {
+                "id": "contactInfo",
+                "label": "registrationapp.patient.contactInfo.label",
+                "questions": [
+                    {
+                        "legend": "Person.address",
+                        "fields": [
+                            {
+                                "type": "personAddress",
+                                "label": "registrationapp.patient.address.question",
+                                "widget": {
+                                    "providerName": "uicommons",
+                                    "fragmentId": "field/personAddress"
+                                }
+                            }
+                        ]
+                    },
+                     {
+                            "legend": "registrationapp.patient.phone.label",
+                            "id": "phoneNumberLabel",
+                            "fields": [
+                                {
+                                    "type": "personAttribute",
+                                    "label": "registrationapp.patient.phone.question",
+                                    "formFieldName": "phoneNumber",
+                                    "uuid": "14d4f066-15f5-102d-96e4-000c29c2a5d7",
+                                    "widget": {
+                                        "providerName": "uicommons",
+                                        "fragmentId": "field/text",
+                                        "config": {
+                                            "regex": "^[0-9]{10}$|^$"
+                                        }
+                                    },
+                                    "cssClasses": ["phone"]
+                               
+                                }
+                            ]
+                        },
+                        {
+                            "id" : "EmailAddress",
+                            "legend" : "Email Address",
+                            "fields" : [
+                                {
+                                    "type" : "personAttribute",
+                                    "label" : "Email Address",
+                                    "formFieldName" : "Email Address",
+                                    "uuid" : "7d35a2d4-26a8-4917-86dc-5ac7b81ac541",
+                                    "widget" : {
+                                        "providerName" : "uicommons",
+                                        "fragmentId" : "field/text"             
+                                    }
+                                }
+                            ]
+                        },
+       
+                         {
+                            "id" : "ID CARD",
+                            "legend" : "ID Number",
+                            "fields" : [
+                                {
+                                    "type" : "personAttribute",
+                                    "label" : "Identifier",
+                                    "formFieldName" : "ID Number",
+                                    "uuid" : "7d35a2d4-26a8-4917-86dc-5ac7b81ac541",
+                                    "widget" : {
+                                        "providerName" : "registrationapp",
+                                        "fragmentId" : "field/text"
+                                    },
+                                  "cssClasses": ["number"]
+                                }
+                            ]
+                        },
+    {
+              "legend": "RelationshipShips",
+              "fields": [
+                {
+                  "type": "Relationship",
+                  "label": "RelationShips",
+                  "formFieldName": "Relationship",
+                  "widget": {
+                    "providerName": "registrationapp",
+                    "fragmentId": "field/personRelationship"
+                  }
+                }
+              ]
+            }
+                ]
+            }
+        ]
+    }
+}
