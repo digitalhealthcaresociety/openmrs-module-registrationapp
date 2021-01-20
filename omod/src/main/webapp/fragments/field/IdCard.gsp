@@ -1,3 +1,7 @@
+<p class="left">
+<input type = "text" name ="IdCard" />
+</p>
+<span>
 <p>
     <label>
         ${config.label}
@@ -11,4 +15,4 @@
         <option value ="165225">Pan Card</option>
     </select>
     <span class="field-error"></span>
-</p>
+</p></span>
