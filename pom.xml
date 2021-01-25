@@ -47,7 +47,7 @@
         <registrationcoreVersion>1.8.0</registrationcoreVersion>
         <reportingModuleVersion>0.10.4</reportingModuleVersion>
         <addresshierarchyVersion>2.9</addresshierarchyVersion>
-        <htmlformentryVersion>3.3.0</htmlformentryVersion>
+        <htmlformentryVersion>3.12.0</htmlformentryVersion>
         <appuiVersion>1.7</appuiVersion>
         <coreappsVersion>1.11.1</coreappsVersion>
         <serializationXstreamModuleVersion>0.2.12</serializationXstreamModuleVersion>
