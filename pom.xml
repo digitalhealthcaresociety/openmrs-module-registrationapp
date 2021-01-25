@@ -41,7 +41,7 @@
         <springVersion>3.0.5.RELEASE</springVersion>
         <idgenVersion>4.4.0</idgenVersion>
         <uicommonsVersion>2.4.0</uicommonsVersion>
-        <emrapiVersion>1.18</emrapiVersion>
+        <emrapiVersion>1.30.0</emrapiVersion>
         <calculationVersion>1.2</calculationVersion>
         <providerManagementVersion>2.5.0</providerManagementVersion>
         <registrationcoreVersion>1.8.0</registrationcoreVersion>
