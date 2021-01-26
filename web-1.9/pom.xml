@@ -13,7 +13,7 @@
     <description>1.9 web project for registrationapp</description>
 
     <properties>
-        <openMRSVersion>1.9.9</openMRSVersion>
+        <openMRSVersion>2.4.0</openMRSVersion>
     </properties>
 
     <dependencies>
