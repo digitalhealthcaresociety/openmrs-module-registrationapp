@@ -100,7 +100,22 @@
                                 }
                             ]
                         },
-    {
+                        {
+                            "legend": "dhs.registrationapp.nationality",
+                            "fields": [
+                              {
+                                "type": "personAttribute",
+                                "label": "dhs.registrationapp.nationality.question",
+                                "formFieldName": "nationality",
+                                "uuid": "60393c0d-1511-4aa1-8627-7c63d3d072b0",
+                                "widget": {
+                                  "providerName": "registrationapp",
+                                  "fragmentId": "field/nationality"
+                                }
+                              }
+                            ]
+                          },
+            {
               "legend": "RelationshipShips",
               "fields": [
                 {
