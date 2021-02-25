@@ -52,7 +52,7 @@
         <coreappsVersion>1.11.1</coreappsVersion>
         <serializationXstreamModuleVersion>0.2.12</serializationXstreamModuleVersion>
         <eventVersion>2.8.0</eventVersion>
-        <groovyVersion>1.8.7</groovyVersion>
+        <groovyVersion>2.4.21</groovyVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
